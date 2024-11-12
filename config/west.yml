@@ -2,10 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: bQQts
+      url-base: https://github.com/bQQts
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: nice-view-mod
+      remote: bQQts
+      revision: main
   self:
     path: config
